@@ -14,13 +14,6 @@ export const getters = {
   },
   sortDirection(state) {
     return state.sortFirst;
-  },
-  sortedGalaxies(state) {
-    const list = state.galaxies;
-    const sorted = list.sort((a, b) => {
-      return state.sortFirst ? a.name > b.name : b.name > a.name
-    })
-    return sorted
   }
 }
 
