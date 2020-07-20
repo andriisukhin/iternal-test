@@ -44,9 +44,6 @@ export const actions = {
         'Content-Type': 'application/json'
       }
     })
-    const test = response.data.sort((a, b) => {
-      return b.name > a.name;
-    })
     commit('setData', response.data)
   }
 }
